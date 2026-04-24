@@ -9,7 +9,7 @@ from .ppt_builder import (
     PPTBuilder, generate_ppt_from_outline,
     save_template, delete_template, get_saved_template_path
 )
-from .prompts import PromptTemplates, DEFAULT_SYSTEM_PROMPT
+from .prompts import PromptTemplates, get_system_prompt
 from .config_manager import ConfigManager, load_or_create_config, is_configured
 
 __all__ = [
@@ -23,7 +23,7 @@ __all__ = [
     'delete_template',
     'get_saved_template_path',
     'PromptTemplates',
-    'DEFAULT_SYSTEM_PROMPT',
+    'get_system_prompt',
     'ConfigManager',
     'load_or_create_config',
     'is_configured'
