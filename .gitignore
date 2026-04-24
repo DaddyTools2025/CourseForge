@@ -62,6 +62,8 @@ secrets.toml
 *.mp4
 *.png
 *.m4a
+packages_arm64/
+packages_linux/
 
 # IDE / Editor
 .idea/
