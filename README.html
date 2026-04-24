@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseForge v2.7 - 企业级 AI 备课神器</title>
+    <style>
+        :root {
+            --primary-color: #e03e2d;
+            /* 小红书红 */
+            --bg-color: #f6f6f6;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-sub: #666666;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --radius: 16px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            color: var(--text-main);
+            max-width: 600px;
+            /* 模拟手机宽屏 */
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin: 10px 0;
+            color: var(--text-main);
+        }
+
+        .header p {
+            color: var(--text-sub);
+            font-size: 1.1em;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ffe4e1;
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2 .emoji {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .highlight-box {
+            background: #fdf2f2;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 0.9em;
+        }
+
+        .pain-point {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: var(--text-sub);
+        }
+
+        .pain-point .icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        .btn-like {
+            display: block;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(224, 62, 45, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.8em;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>CourseForge v2.7</h1>
+        <p>🚀 让每一位业务骨干都能成为金牌讲师</p>
+    </div>
+
+    <!-- P1: 痛点直击 -->
+    <div class="card">
+        <span class="card-tag">痛点</span>
+        <h2>� 备课还在"文档搬家"？</h2>
+        <div class="pain-point">
+            <span class="icon">🤯</span>
+            <span><strong>门槛高</strong>：懂业务不懂教学，学员听不进</span>
+        </div>
+        <div class="pain-point">
+            <span class="icon">💰</span>
+            <span><strong>成本高</strong>：外包一门课好几万，周期太长</span>
+        </div>
+        <div class="pain-point">
+            <span class="icon">�</span>
+            <span><strong>风险高</strong>：内部文档不敢传公网 AI</span>
+        </div>
+        <div class="highlight-box">
+            👉 <strong>CourseForge 铸课工坊</strong>：本地部署、数据隔离、一键生成的 AI 备课私教！
+        </div>
+    </div>
+
+    <!-- P2: 核心功能 -->
+    <div class="card">
+        <span class="card-tag">NEW ✨</span>
+        <h2>🛠️ 3分钟，一键成课</h2>
+        <ul class="feature-list">
+            <li><strong>智能解析</strong>：扔进 PDF/Word，自动洗掉页眉水印，提取干货。</li>
+            <li><strong>AI-ADDIE 引擎</strong>：不仅生成内容，更懂教学设计。自适应"初级/中级"受众语态。</li>
+            <li><strong>全套交付</strong>：
+                <br>📊 <strong>标准化 PPT</strong> (支持企业母版)
+                <br>🎬 <strong>分镜脚本</strong> (含画面建议+时间轴)
+                <br>🎮 <strong>互动方案</strong> (角色扮演/游戏化)
+                <br>� <strong>通关测试</strong> (20道场景题+解析)
+            </li>
+        </ul>
+    </div>
+
+    <!-- P3: 创新亮点 v2.7 -->
+    <div class="card">
+        <span class="card-tag">黑科技 🔥</span>
+        <h2>🌟 为什么选择 CourseForge?</h2>
+
+        <h3>🛡️ 母版卫士 (Safe Mode)</h3>
+        <p>担心 AI 生成的 PPT 排版乱？<br>
+            <strong>v2.7 首创母版质检技术</strong>，上传企业模板自动安检。合格即用，不合格自动降级为"安全绘图模式"，绝对不跑版！
+        </p>
+
+        <h3>🔒 隐私优先 (Privacy First)</h3>
+        <p>支持 <strong>数据不出域</strong>！<br>
+            可配置企业内网大模型 (Local LLM)，临时文件本地销毁，合规零风险。</p>
+
+        <h3>⚡ 零代码启动</h3>
+        <p>无需懂 Python，双击 <code>start.bat</code> 自动配置环境，小白也能轻松上手。</p>
+    </div>
+
+    <!-- P4: 价值 -->
+    <div class="card">
+        <h2>� 降本增效神器</h2>
+        <p>📉 <strong>成本</strong>：趋近于 0 (利用内部算力/API)</p>
+        <p>⚡ <strong>效率</strong>：3天变3分钟 (100倍提速)</p>
+        <p>🏆 <strong>质量</strong>：拉齐全员备课水平，拒绝"念PPT"</p>
+
+        <a href="#" class="btn-like">� 立即体验 CourseForge v2.7</a>
+    </div>
+
+    <!-- P5: 演示视频口播稿 -->
+    <div class="card">
+        <span class="card-tag">推广 🎬</span>
+        <h2>🎤 1分钟演示口播稿</h2>
+        <p>（推荐配合 PPT/软件界面录屏演示使用）</p>
+        <div class="highlight-box">
+            <p><strong>【00:00 痛点引入】</strong><br>“备课像文档搬家？机密资料不敢用公网AI？带你体验企业级备课私教——CourseForge 铸课工坊！”</p>
+            <p><strong>【00:15 极简演示】</strong><br>“（演示上传文档）双击启动，零代码部署。扔进培训文档，选择受众群体，它的 AI-ADDIE 引擎不仅能提取干货，更懂教学设计。”</p>
+            <p><strong>【00:35 惊艳交付】</strong><br>“（演示生成结果）3分钟一键交付全套内容！无损 LMS 题库导出、企业标准化 PPT、甚至互动方案和分镜脚本全都有！安全零跑版。”</p>
+            <p><strong>【00:50 结尾呼吁】</strong><br>“消除备课门槛，告别念PPT！快来试试 CourseForge，让每一位业务骨干都成为金牌讲师！”</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Generated by CourseForge Team | 2026</p>
+    </div>
+
+</body>
+
+</html>
