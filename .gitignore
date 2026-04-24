@@ -58,10 +58,7 @@ outputs/
 *.exe
 .streamlit/secrets.toml
 secrets.toml
-*.xlsx
-*.mp4
-*.png
-*.m4a
+
 packages_arm64/
 packages_linux/
 
